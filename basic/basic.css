@@ -4,6 +4,9 @@
 .green {
     color: green;
 }
-bg-yellow {
+.bg-yellow {
     background-color: yellow;
+}
+.bg-other {
+    background-color: blue;
 }

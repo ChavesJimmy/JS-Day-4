@@ -12,15 +12,18 @@ function print(){
     let count = myName.trim().length;
     console.log(myName.trim().length);
 
-    if ( count <= 5 ) {
+    if ( count <= 5 ){
             classElement = "red" }
-    else {
+    else{
             classElement = "green"
         };
 
-    if (job == "IT"){
+  /*   if (job == "IT"){
             classElement = "bg-yellow"
-    };
+    }
+    else{
+                classElement = "bg-other"
+    }; */
 
 document.getElementById("result").innerHTML = (`Name: ${myName} <br> Surname: ${surname} <br>Age:${age} <br>Job:${job}`);
 
