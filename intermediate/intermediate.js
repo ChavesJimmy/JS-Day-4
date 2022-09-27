@@ -2,19 +2,19 @@
 function removeItem () {
     this.style.opacity = "0";
     this.style.transition = "1s";
-   /*  setTimeout(function(){
+    setTimeout(() => {
         this.remove();
-    }, 1000); */
+    }, 1000);
 }
 
-/* function removeSanta(){
+function removeSanta(){
     let items = document.getElementsByClassName("santa");
     
     for (let i=0; i < items.length; i++){
         items[i].addEventListener("click",removeItem);
     }console.log(items)
 }
-removeSanta() */
+removeSanta()
 
 
 //ex2 random bg-color by clicking on button
