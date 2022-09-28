@@ -4,8 +4,8 @@ function printName(){
 const name1 = document.getElementById("Player1").value;
 const name2 = document.getElementById("Player2").value;
 
-document.getElementById("p1").innerHTML = `Player 1 : ${name1}`;
-document.getElementById("p2").innerHTML = `Player 2 : ${name2}`;
+document.getElementById("p1").innerHTML = `Player 1 :<br> ${name1}`;
+document.getElementById("p2").innerHTML = `Player 2 : <br>${name2}`;
 console.log(name1);
 
 }
@@ -30,8 +30,8 @@ document.getElementById("score1").innerHTML = `Score = ${score1}`
 document.getElementById("score2").innerHTML = `Score = ${score2}`
 
 // create Dice 1
-const btn2 = document.getElementById("dice2");
-const btn = document.getElementById("dice1");
+var btn2 = document.getElementById("dice2");
+var btn = document.getElementById("dice1");
 
 function dice1(){    
      score1 += (Math.floor(Math.random()*6)+1);
@@ -39,8 +39,9 @@ function dice1(){
 
     if(score1 >= maxScore){
         let result = document.getElementById("score1");
-        result.innerHTML = `Player 1 WIN !!!!`;
-        document.getElementById("score2").innerHTML = `You lose!!`;
+        result.innerHTML = `<h1 style=color:green>Player 1 WIN !!!!</h1>`;
+        document.getElementById("gameboard2").style.display="none";
+        document.getElementById("Turn").style.display="none";
 
     }
 }
@@ -55,8 +56,10 @@ function dice2(){
    document.getElementById("score2").innerHTML = `Score = ${score2}`;
 
    if(score2 >= maxScore){
-        document.getElementById("score2").innerHTML = `You WIN !!!!`;
-        document.getElementById("score1").innerHTML = `You lose!`;
+        document.getElementById("score2").innerHTML = `<h1 style=color:green>Player 2 WIN !!!!</h1>`;
+        document.getElementById("gameboard1").style.display="none";
+        document.getElementById("Turn").style.display="none";
+
 
     }
 }
