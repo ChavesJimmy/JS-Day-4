@@ -8,18 +8,18 @@
     <link rel="stylesheet" href="challenge.css">
 </head>
 <body>
-    <span>
-        <input type="text" class="name" id="player1" placeholder="name player 1">
-        <input type="text" class="name" id="player2" placeholder="name player 2">
-        <button id="start">Let's play !</button>
-    </span>
-    <main>
-        <div>
+    <div id="input">
+        <input type="text" class="name" id="player1" placeholder="Enter : name player 1">
+        <button id="start">Let's play !</button> 
+        <input type="text" class="name" id="player2" placeholder="Enter : name player 2">
+    </div>
+    <main id="game">
+        <div id="gameboard1">
             <h1 id="p1"></h1>
             <p id="score1"></p>
             <button id="dice1" class="toggleMe">play</button>
         </div>
-        <div>
+        <div id="gameboard2">
             <h1 id="p2"></h1>
             <p id="score2"></p>
             <button id="dice2" class="toggleMe">play</button>

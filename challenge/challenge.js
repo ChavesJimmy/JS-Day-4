@@ -11,6 +11,14 @@ document.getElementById("p2").innerHTML = `Player 2 : ${name2}`;
 let start = document.getElementById("start");
 start.onclick = printName;
 
+function hide(){
+    let input = document.getElementById("input");
+    input.style.display = "none";
+    let game = document.getElementById("game");
+    game.style.display = "flex"
+}
+start.onclick = hide;
+
 // display score
 let score1 = 0;
 let score2 = 0;
@@ -53,14 +61,18 @@ document.getElementById("dice2").addEventListener("click",dice2);
 //Create turn
 const btn = document.getElementById("dice1");
 btn.addEventListener("click", function onclick(){
-    document.body.style.backgroundColor = "lightblue";
+    document.body.style.backgroundColor = "lightpink";
     document.getElementById("Turn").innerHTML = "2nd player turn!";
+    btn.style.display = "none";
+    btn2.style.display = "block";
 })
 
 const btn2 = document.getElementById("dice2");
 btn2.addEventListener("click", function onclick(){
-    document.body.style.backgroundColor = "lightpink";
+    document.body.style.backgroundColor = "lightblue";
     document.getElementById("Turn").innerHTML = "1st player turn!";
+    btn.style.display = "block";
+    btn2.style.display = "none";
 })
 
    

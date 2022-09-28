@@ -1,0 +1,60 @@
+#input{
+    background-color: black;
+    border-top : solid blue 3px;
+    border-bottom: solid red 3px;
+    display: flex;
+    justify-content: space-around;
+    height: 150x;
+    padding: 5px;
+    border-radius: 50px;
+}
+#start {
+    border: double 5px black;
+    opacity: 100;
+    height: 100px;
+    border-radius: 50px;
+    background: radial-gradient(yellow, orange, yellow);
+}
+#start:hover{
+    transform: scale(1.2);
+}
+#player1 {
+    height: 100px;
+    width: 200px;
+    background-color: lightblue;
+    border-radius: 50%;
+    border: double blue 6px;
+}
+#player2 {
+    height: 100px;
+    width: 200px;
+    background-color: lightpink;
+    border-radius: 50%;
+    border: double red 6px;
+}
+:placeholder-shown{
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+main{
+    display : none
+}
+body{
+    display: grid;
+    background-image: url("https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706__480.jpg");
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: xx-large;
+}
+#dice2 {
+    display: none;
+}
+#gameboard1{
+    display: flex;
+    flex-direction: column;
+margin: auto;    width: 40%;
+    opacity: 70%;
+    background-color: lightblue;
+}
