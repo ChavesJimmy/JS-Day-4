@@ -7,6 +7,7 @@
     height: 150x;
     padding: 5px;
     border-radius: 50px;
+
 }
 #start {
     border: double 5px black;
@@ -18,19 +19,23 @@
 #start:hover{
     transform: scale(1.2);
 }
-#player1 {
+#Player1 {
     height: 100px;
     width: 200px;
     background-color: lightblue;
     border-radius: 50%;
     border: double blue 6px;
+    font-weight: bold;
+    text-align: center;
 }
-#player2 {
+#Player2 {
     height: 100px;
     width: 200px;
     background-color: lightpink;
     border-radius: 50%;
     border: double red 6px;
+    font-weight: bold;
+    text-align: center;
 }
 :placeholder-shown{
     text-align: center;
@@ -38,7 +43,10 @@
     font-weight: bold;
 }
 main{
-    display : none
+    display : none;
+    margin: 50px;
+    align-items: center;
+    justify-content: space-around;
 }
 body{
     display: grid;
@@ -47,14 +55,44 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     font-size: xx-large;
+    margin: 50px;
 }
+#dice1 {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    margin: auto;}
 #dice2 {
     display: none;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
 }
 #gameboard1{
+    border: solid blue;
+    border-radius: 15px;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
-margin: auto;    width: 40%;
-    opacity: 70%;
+    margin: 50px;
+    padding: 15px;    
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
     background-color: lightblue;
+    text-align: center;
+}
+#gameboard2{
+    border: solid red;
+    text-align: center;
+    border-radius: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    flex-direction: column;
+    margin: 50px;    
+    width: 100%;
+    height: 100%;
+    opacity: 80%;
+    background-color: lightpink;
 }
